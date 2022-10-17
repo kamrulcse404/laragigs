@@ -18,29 +18,31 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(5)->create();
 
+        Listing::factory(5)->create();
+
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
 
-        Listing::create([
-            'title' => 'Laravel Serior Developer',
-            'tags' => 'laravel javascript',
-            'company' => 'Acme Corp',
-            'location' => 'Boston, MA',
-            'email' => 'acme@gmail.com',
-            'website' => 'https://www.acme.com',
-            'description' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque est magnam vitae sit iure nisi molestiae numquam eaque dignissimos mollitia?'
-        ]);
+        // Listing::create([
+        //     'title' => 'Laravel Serior Developer',
+        //     'tags' => 'laravel javascript',
+        //     'company' => 'Acme Corp',
+        //     'location' => 'Boston, MA',
+        //     'email' => 'acme@gmail.com',
+        //     'website' => 'https://www.acme.com',
+        //     'description' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque est magnam vitae sit iure nisi molestiae numquam eaque dignissimos mollitia?'
+        // ]);
 
-        Listing::create([
-            'title' => 'Full-Stack Engineer',
-            'tags' => 'php laravel react mysql',
-            'company' => 'Enosis',
-            'location' => 'Banani, Dhaka',
-            'email' => 'enosis@gmail.com',
-            'website' => 'https://www.acme.com',
-            'description' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque est magnam vitae sit iure nisi molestiae numquam eaque dignissimos mollitia?'
-        ]);
+        // Listing::create([
+        //     'title' => 'Full-Stack Engineer',
+        //     'tags' => 'php laravel react mysql',
+        //     'company' => 'Enosis',
+        //     'location' => 'Banani, Dhaka',
+        //     'email' => 'enosis@gmail.com',
+        //     'website' => 'https://www.acme.com',
+        //     'description' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque est magnam vitae sit iure nisi molestiae numquam eaque dignissimos mollitia?'
+        // ]);
     }
 }
